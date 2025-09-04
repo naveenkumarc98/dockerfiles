@@ -1,5 +1,5 @@
 FROM almalinux:9
 RUN dnf install nginx -y
 RUN rm -rf /usr/share/nginx/html/index.html
-ADD https://https://raw.githubusercontent.com/naveenkumarc98/Ansible/refs/heads/main/nginx.yaml
+ADD https://raw.githubusercontent.com/naveenkumarc98/Ansible/refs/heads/main/nginx.yaml
 CMD ["nginx", "-g", "daemon off;"]
